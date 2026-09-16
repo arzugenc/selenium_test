@@ -24,7 +24,9 @@ game_name=driver.find_elements(By.CLASS_NAME,"tab_item_title")
 game_name[0]
 game_name[-1] 
 """
-print(f"oyun adları : {game_name}.text")
+
+for game in game_name:
+    print(f"oyun adı: {game.text}")
 sleep(2)
 
  
